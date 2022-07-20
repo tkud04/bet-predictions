@@ -1,0 +1,1376 @@
+@charset "utf-8";
+
+/**
+*
+* -----------------------------------------------------------------------------
+*
+* Template : Soccer HTML5 Responsive Template 
+* Author : rs-theme
+* Author URI : http://www.rstheme.com/
+*
+* -----------------------------------------------------------------------------
+*
+**/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1620px) {
+    .full-section-banner::after, .full-section-banner::before {
+        bottom: -12%;
+    }
+}
+/* Midea Devices, Wide Screens */
+@media only screen and (max-width: 1440px) {
+/*
+    .slider-section2 .innner-slider .inner-dsc h1 {
+        font-size: 40px;
+        line-height: 52px;
+    }
+*/
+    .full-section-banner::after, .full-section-banner::before {
+        bottom: -9%;
+    }
+    .slider-main .dsc .slider-image img{
+        max-width: 70% !important; 
+    }
+    .slider-section2 .innner-slider .inner-dsc {
+        margin-bottom: 26%;
+    }
+    .slider-section2 .innner-slider .layer-big-image{
+        max-width: 580px;
+    }
+   
+}
+/* Midea Devices Max 1300px */
+@media only screen and (max-width: 1300px) {
+    .slider-main .slider-text {
+        margin-top: 15%;
+    }
+    .slider-main .dsc .slider-image img{
+        max-width: 60% !important; 
+    } 
+    .full-section-banner::after, .full-section-banner::before {
+        bottom: -6%;
+    }
+}
+/* Midea Devices Max 1199px */
+@media only screen and (max-width: 1199px) {
+    .header-middle-area .rs-menu > ul > li > a {
+        padding: 28px 10px;
+        font-size: 15px;
+    }
+    .banner-sections .banner-text-area .banner-innner h1,
+    .slider-main .dsc h2, 
+    .slider-section2 .dsc h2,
+    .slider-main .dsc h1, 
+    .slider-section2 .dsc h1{
+        font-size: 45px;
+    }
+    .slider-main .dsc h1, 
+    .slider-main .dsc h2{
+        line-height: 58px;
+    }
+    .our-history-sections .history-innner .history-details{
+        padding-top: 30px;
+    }
+    .our-history-sections .history-innner .history-details h3{
+        font-size: 24px;
+        line-height: 35px;
+    }
+    .rs-menu ul ul a {
+        width: 200px;
+    }
+    .slider-section2 .innner-slider .layer-big-image {
+        max-width: 450px;
+    }
+    .slider-section2 .innner-slider .inner-dsc h1 {
+        font-size: 35px;
+        line-height: 45px;
+        margin-bottom: 25px;
+    }
+    .full-section-banner::after, .full-section-banner::before {
+        bottom: -3%;
+    }
+    .slider-sections-area3 #slider-carousel ul li{
+       width: 290px !important;
+    }
+    .slider-sections-area3 #slider-images ul li .single-slide h1 {
+        font-size: 45px;
+        line-height: 70px;
+        margin-bottom: 40px;
+    }
+    .shipping-area .product-list table tr td {
+        padding-right: 20px;
+    }
+    .single-product-page .single-price-info{
+        margin-bottom: 40px;
+    }
+    .champion-section-area .champion-inner .champion-details .year-details h3 {
+        font-size: 16px;
+    }
+    .rs-blog .single-blog-slide .blog-details h3 {
+        line-height: 18px;
+    }
+    .rs-blog .single-blog-slide .blog-details h3 a{
+        font-size: 15px;
+    }
+    .rs-blog .single-blog-slide{
+        min-height: 470px;
+    }
+    .slider-main.slider-section4 .slider-text h1 {
+        font-size: 45px;
+    }
+    .our-team-section .best-footballer{
+        padding: 25px 18px 30px;
+    }
+    .our-team-section .best-footballer h4{
+        margin-bottom: 10px;
+    }
+    .our-team-section .best-footballer .submit-area {
+        margin-top: 10px;
+    }
+}
+
+
+/* Large devices min 992px */
+@media (min-width: 992px) {
+   .fullwidth-section2 .rs-menu ul ul {
+        border-top: 4px solid #505050;
+    }
+    .modal-dialog {
+        max-width: 670px;
+    }
+    .modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%;
+    }
+    .modal-dialog {
+      display: inline-block;
+      text-align: left;
+      vertical-align: middle;
+    }
+    .fullwidth-headers3 .header-middle-area .rs-menu ul li:last-child{
+        padding-right: 60px;
+    }
+}
+
+/* mediam devices (desktops, 991px and up) */
+@media only screen and (min-width:992px) and (max-width: 1199px) {
+    .banner-sections .banner-text-area{
+        top: 60%;
+    }
+    .latest-news .small-news .news-text h3, 
+    .latest-news2 .small-news .news-text h3{
+         line-height: 14px; 
+    }
+    .latest-news .small-news .news-text h3 a, 
+    .latest-news2 .small-news .news-text h3 a{
+         font-size: 13px; 
+    }
+    .match-list .match-table tr td.medium-font {
+        font-size: 12px;
+    }
+    .match-list .match-table tr td.big-font {
+        font-size: 20px;
+    }
+    .point-list table.point-table th, 
+    .point-list table.point-table td {
+        padding: 7px 12px;
+        font-size: 14px;
+    }
+    .today-match-teams .today-results-table tr td {
+        padding: 7px 12px;
+    }
+    .today-match-teams .today-score .today-match-team, 
+    .today-match-teams .today-score .today-final-score, 
+    .today-match-teams .today-score .today-match-team {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .today-match-teams .today-score .today-final-score{
+        margin: 30px auto;
+    }
+    .today-match-teams .today-score .today-final-score h4{
+        margin: 10px;
+    }
+    .fullwidth-headers3 .header-middle-area .search {
+        right: 8%;
+    }
+    .fullwidth-section4 .header-middle-area4 .search{
+        right: 6px;
+    }
+    .single-product-page .single-product-area .single-product-nav {
+        max-width: 450px;
+    }
+    .latest-news-slider .slick-arrow {
+        right: -90px;
+    }
+    .latest-news-slider .slick-arrow.slick-next {
+        right: -135px;
+    }
+    .fullwidth-section2 .header-middle-area .rs-menu > ul > li > a {
+        padding-right: 15px;
+        font-size: 15px;
+    }
+}
+
+
+/* Medium devices max 991px and min 768px */
+@media only screen and (min-width:768px) and (max-width: 991px) {
+    .upcoming-section span, 
+    .upcoming-section2 span, 
+    .upcoming-section3 span, 
+    .upcoming-section4 span{
+        font-size: 14px;
+    }
+    .shipping-area .product-list table tr td .des-pro {
+        padding-right: 0;
+    }
+    .shipping-area .product-list table tr td .order-pro {
+        margin-right: 30px;
+    }
+    .club-sidebar .club-details h2.title-bg {
+        font-size: 18px;
+    }
+    .club-sidebar .club-details ul li strong {
+        font-size: 16px;
+    }
+    .club-sidebar .club-details ul li span {
+        font-size: 14px;
+    }
+}
+
+/* Medium devices Max 991px */
+@media only screen and (max-width: 991px) {
+    .sec-spacer{
+        padding: 80px 0;
+    }
+    .our-team-section.team-inner-page,
+    .our-products-section,
+    .gallery-section-page2,
+    .pb-70{
+        padding-bottom: 50px;
+    }
+    .rs-blog .sidebar-area{
+        overflow: hidden;
+        clear: both;
+        padding-top: 60px;
+    }
+    .pt-100{
+        padding-top: 80px;
+    }
+    .pb-100,
+    .our-products-section.our-products-page{
+        padding-bottom: 80px;
+    }
+    .separator-100{
+        height: 45px;
+    }
+    .clicent-logo-section .owl-carousel .owl-item img{
+        width: auto;
+        display: inline;
+    }
+    .clicent-logo-section{
+        padding-bottom: 30px;
+    }
+    
+    .upcoming-section,
+    .upcoming-section2{
+        padding: 72px 0 77px;
+    }
+    .rs-breadcrumbs img {
+        min-height: 200px;
+    }
+    .rs-mission-image{
+        text-align: center;
+    }
+    .rs-history-area .rs-mission-image{
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+    .fullwidth-section2 .header-middle-area.sticky{
+        box-shadow: none;
+    }
+    .menu-sticky.sticky .logo img{
+        max-width: 100%;
+    }
+    .single-product-page .our-products-section{
+        padding-bottom: 0;
+    }
+    .rs-team-single-section .rs-team-single-image,
+    .single-product-page,
+    .champion-section-area .rs-count .rs-counter-list,
+    .our-team-section.pb-100,
+    .latest-news.mmb-40,
+    .video-area.mmb-40,
+    .match-list.mmb-45{
+        margin-bottom: 40px;
+    }
+    .point-list.mmb-45{
+        margin-bottom: 45px;
+    }
+    .champion-section-area .row.pb-50{
+        padding-bottom: 0;
+    }
+    .match-list.mpt-45{
+        margin-top: 40px;
+    }
+    .single-blog-details{
+        padding-bottom: 70px;
+    }
+    .rs-history-area .history-innner{
+        padding-top: 0;
+    }
+    .header-middle-area4 .hidden-xs.hidden-sm{
+        display: none !important;
+    }
+    .header-middle-area4 .hidden-lg.hidden-md{
+        display: block !important;
+    }
+    .gallery-section2 .container-fluid{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .video-section-area{
+        padding: 80px 0;
+    }
+    .our-team-section .separator-70 {
+        height: 35px;
+    }
+    .separator-65 {
+        height: 45px;
+    }
+    .fullwidth-section2 .header-middle-area .container .col-md-9,
+    .our-history-sections .history-innner,
+	.header-bottom-area .main-menu ul li{
+    	padding: 0;
+    }
+    .slider-section2 .innner-slider .inner-dsc {
+        margin-bottom: 30%;
+    }
+    
+    .header-middle-area .search a, 
+    .fullwidth-section2 .header-middle-area .rs-menu > ul > li > a,
+    .header-middle-area .search .search-btn, 
+    .header-middle-area .rs-menu > ul > li > a{
+        color: #ffffff !important;
+    }
+    body .search-modal .close{
+        margin-right: 15px;
+    }
+    .slider-section2 .innner-slider .layer-big-image {
+        max-width: 375px;
+    }
+    .fullwidth-section2 .header-middle-area .search .search-btn:hover,
+    .fullwidth-section2 .header-middle-area .rs-menu > ul > li > a:hover,
+    .header-middle-area .rs-menu > ul > li > a:hover,
+    .header-middle-area .rs-menu > ul > li.active > a,
+    .fullwidth-section2 .header-middle-area .rs-menu > ul > li.active > a{
+        color: #fbc02d !important;
+    }
+    .header-middle-area4,
+    .header-middle-area{
+        background: #111 !important;
+    }
+    .rs-menu{
+		visibility: visible;
+	}
+    .rs-menu.rs-menu-close{
+		visibility: hidden;
+	}
+    .coupon-fields .input-text,
+    .header-middle-area4 .container,
+    .header-middle-area .container{
+        width: 100%;
+    }
+    .header-middle-area4 .mobile-menu,
+    .header-middle-area .container .mobile-menu{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .slider-sections-area3 #slider-carousel ul{
+        margin-left: -5px;
+    }
+    .slider-sections-area3 #slider-carousel ul li {
+        width: 220px !important;
+        margin-left: 10px;
+    }
+    .slider-sections-area3 #slider-images ul li .single-slide h1 {
+        font-size: 40px;
+        line-height: 55px;
+        margin-bottom: 35px;
+    }
+    .slider-sections-area3 #slider-images ul li .single-slide{
+        top: 45%;
+    }
+    .header-middle-area .logo {
+        height: auto;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .fullwidth-headers3 .header-middle-area .logo{
+        padding-top: 10px;
+    }
+    .fullwidth-section4 .header-middle-area4 .search{
+        right: 0;
+    }
+    .header-middle-area .search{
+        top: auto;
+        bottom: 14px;
+        right: 14px;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+    .latest-video-section .latest-video > img{
+        width: 100%;
+    }
+    .header-middle-area .search .search-btn{
+        margin: 17px 18px;
+    }
+    .header-middle-area .rs-menu,
+    .header-middle-area4 .rs-menu{
+        padding-right: 0;
+    }
+    .header-middle-area4 .rs-menu ul{
+        background: #111;
+        z-index: 999;
+    }
+    .fullwidth-section4 .header-middle-area4 .nav-menu > li > a,
+    .header-middle-area .rs-menu > ul > li > a {
+        padding: 16px 18px !important;
+    }
+    .all-news-area2 .match-list{
+        margin-bottom: 0;
+    }
+    .today-match-teams .today-score .today-match-team,
+    .today-match-teams .today-score .today-final-score,
+    .today-match-teams .today-score .today-match-team{
+        float: none;
+        display: inline-block;
+    }
+    .our-products-section .single-product{
+        margin-bottom: 30px;
+    }
+    .gallery-section2{
+        padding-bottom: 70px;
+    }
+    .our-products-section.pb-100,
+    .our-team-section.pb-65{
+        padding-bottom: 15px;
+    }
+    .footer-section .footer-top [class*="col-"] + [class*="col-"] {
+        margin-top: 40px;
+    }
+    .footer-section .about-widget p:first-child{
+        margin-bottom: 12px;
+    }
+    .footer-section .footer-top{
+        padding: 80px 0;
+    }
+    .slider-main .dsc h1, 
+    .slider-main .dsc h2 {
+        line-height: 44px;
+    }
+    .upcoming-section h2, 
+    .upcoming-section2 h2, 
+    .upcoming-section3 h2, 
+    .upcoming-section4 h2,
+    .banner-sections .banner-text-area .banner-innner h1, 
+    .slider-main .dsc h2, 
+    .slider-section2 .dsc h2, 
+    .slider-main .dsc h1, 
+    .slider-section2 .dsc h1 {
+        font-size: 35px;
+    }
+    .match-view-more,
+    .fullwidth-section2 .header-middle-area .main-menu,
+    .fullwidth-headers3 .header-middle-area{
+        margin-top: 0;
+    }
+    .fullwidth-section4 .header-middle-area4 .logo img,
+    .fullwidth-section4 .header-middle-area4,
+    .header-middle-area .logo,
+    .fullwidth-headers3 .header-middle-area .logo img,
+    .fullwidth-headers3 {
+        position: static;
+    }
+    .fullwidth-headers3 .header-middle-area {
+        background: #3d4246;
+    }
+    .fullwidth-headers3 .header-top-area .social-media-area ul li.log a,
+    .fullwidth-headers3 .header-top-area .social-media-area ul li.sign a,
+    .fullwidth-headers3 .header-top-area .social-media-area ul li a:hover,
+    .fullwidth-headers3 .header-top-area .header-top-left > ul > li > a{
+        color: #111;
+    }
+    .fullwidth-headers3 .header-top-area .social-media-area ul li.log a:hover,
+    .fullwidth-headers3 .header-top-area .social-media-area ul li.sign a:hover,
+    .fullwidth-headers3 .header-top-area .header-top-left > ul > li > a:hover,
+    .fullwidth-headers3 .header-top-area .social-media-area ul li a{
+        color: #644d12;
+    }
+    .fullwidth-headers3 .header-top-area .social-media-area ul li a {
+        color: #644d12;
+    }
+    .fullwidth-headers3 .header-top-area{
+        background: #FBC02D;
+    }
+    .sidebar-area .recent-post-area ul li:last-child{
+        padding-bottom: 8px;
+    }
+    .sidebar-area .recent-post-area,
+    .sidebar-area .cate-box, 
+    .sidebar-area .archives-box, 
+    .slider-main .slider-text {
+        margin-top: 30px;
+    }
+    .header-middle-area4 .logo{
+        padding: 10px 0;
+    }
+    .slider-main .owl-dots, .slider-section2 .owl-dots {
+        bottom: 20px;
+    }
+    .slider-main .dsc .btn-slider .btn1, 
+    .slider-main .dsc .btn-slider .btn2, 
+    .slider-section2 .dsc .btn-slider .btn2,
+    .slider-section2 .dsc .btn-slider .btn1 {
+        padding: 5px 35px;
+    }
+    .fullwidth-headers3 .rs-menu > ul > li.active > a, 
+    .fullwidth-headers3 .rs-menu .nav-menu > li > a:hover{
+        color: #fbc02d !important;
+    }
+    .fullwidth-headers3 .header-middle-area .search .search-btn,
+    .fullwidth-headers3 .rs-menu .nav-menu > li > a{
+         color: #fff !important;
+    }
+    .fullwidth-headers3 .header-middle-area .search .search-btn:hover{
+        color: #FBC02D !important;
+    }
+    .fullwidth-headers3 .header-middle-area .search {
+        right: 15px;
+        top: 15px;
+    }
+    .match-list .match-table tr td.medium-font {
+        font-size: 15px;
+    }
+    .video-section-area .video-inner h2{
+        font-size: 25px;
+    }
+    .fullwidth-section2 .header-middle-area {
+        position: static;
+    }
+    .all-news-area2 .latest-news2{
+        margin-top: 45px;
+    }
+    .full-section-banner::after, 
+    .full-section-banner::before {
+        bottom: 2%;
+    }
+    .slider-sections-area3 #slider-carousel{
+        bottom: -58px;
+    }
+    .testimonial-section #testimonial-slider .testimonial .testimonial-profile {
+        width: 20%;
+    }
+    .testimonial-section #testimonial-slider .testimonial .testimonial-content {
+        padding-left: 24%;
+    }
+    .upcoming-section4.upcoming-section4{
+        padding-top: 128px;
+        padding-bottom: 80px;
+    }
+    .testimonil-section-page .slick-current .author-info{
+        padding-bottom: 40px;
+    }
+    .sidebar-area.right-side-area{
+        padding-top: 45px;
+    }
+    .sidebar-area.left-side-area{
+        padding-bottom: 45px;
+    }
+    .shipping-area .order-list{
+        overflow: hidden;
+    }
+    .shipping-area .order-list h3{
+        margin-bottom: 5px;
+    }
+    .checkout-price,
+    .coupon-fields .apply-coupon {
+        float: right;
+    }
+    .rs-check-out .shipping-box .checkbox{
+        margin-top: 0;
+    }
+    .rs-check-out .shipping-box{
+        margin-bottom: 20px;
+    }
+    .contact-page-section .contact-address-section .contact-email,
+    .contact-page-section .contact-address-section .contact-phone,
+    .contact-page-section .contact-address-section .contact-address {
+        margin: 25px 10px;
+    }
+    .match-fixtures-page .sidebar-area {
+        margin-top: 50px;
+        overflow: hidden;
+    }
+    .single-product-page .single-product-area .single-product-nav .slick-prev, 
+    .single-product-page .single-product-area .single-product-nav .slick-next {
+        height: 88px;
+    }
+    .rs-team-single-section .team-single-details-text {
+        padding: 0 0 30px;
+    }
+    .rs-team-single-section .rs-team-single-text .single-details .single-team-text .text-section p {
+        margin: 15px 0 0;
+    }
+    .rs-team-single-section .rs-team-single-text .single-details .single-team-text .signature-section .sign-left h1 {
+        margin: 20px 0 0;
+    }
+
+    .champion-section-area .champion-inner .champion-details .year-details h3 {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+    .rs-blog .single-blog-slide {
+        min-height: 510px;
+    }
+    .menu-sticky.sticky{
+        position: static !important;
+    }
+    .slider-main.slider-section4 .slider-text h1 {
+        font-size: 35px;
+    }
+    .slider-main.slider-section4 .slider-text .CountDownTimer {
+        margin: 20px auto;
+        max-width: 400px;
+    }
+    .slider-main.slider-section4 .time_circles > div span {
+        font-size: 26px !important;
+    }
+    .slider-main.slider-section4 .time_circles > div span {
+        font-size: 26px !important;
+    }
+    .slider-main.slider-section4 .time_circles > div h4{
+        font-size: 10px !important;
+    }
+    .rs-result .team-result table tr.single-result td {
+        display: block;
+    }
+    .rs-result .team-result table tr.single-result td.team-name img {
+        display: none;
+    }
+    .rs-result .team-result table tr.single-result td.match-result,
+    .rs-result .team-result table tr.single-result td.match-venu {
+        padding: 0;
+    }
+}
+
+/* Mobile Large devices */
+@media only screen and (max-width: 767px) {
+    .container {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+    .slider-section4 .item img{
+        min-height: 300px;
+    }
+    .latest-news-nav .slick-slide{
+        margin-bottom: 0;
+    }
+    .our-history-sections .history-innner .about-history{
+        max-width: 350px;
+    }
+    .header-top-area .social-media-area ul,
+    .header-top-area .header-top-left ul{
+        text-align: center;
+    }
+
+    .champion-section-area .club-logo{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .club-sidebar-top .club-name h2.title-bg{
+        margin-top: 20px;
+    }
+    .header-top-area .header-top-left ul li{
+        float: none;
+        display: inline-block;
+    }
+    .header-middle-area4 .container,
+    .header-middle-area .container{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .breking-new-area::after,
+    .latest-news-slider .slick-arrow,
+    .slider-main .owl-dots, 
+    .slider-section2 .owl-dots{
+        display: none !important;
+    }
+    .slider-main .dsc .btn-slider a, 
+    .slider-section2 .dsc .btn-slider a,
+    .slider-main .dsc .btn-slider .btn1, 
+    .slider-section2 .dsc .btn-slider .btn1 {
+        padding: 5px 30px;
+    }
+    .slider-main .btm-date, 
+    .slider-section2 .btm-date {
+        font-size: 12px;
+        line-height: 20px;
+    }
+	.upcoming-section .vs, 
+    .upcoming-section2 .vs, 
+    .upcoming-section3 .vs, 
+    .upcoming-section4 .vs {
+        padding: 15px 0 10px;
+    }
+    .all-news-area .latest-news .inner-news.big-news,
+	.upcoming-section .first, 
+    .upcoming-section2 .first, 
+    .upcoming-section3 .first, 
+    .upcoming-section4 .first {
+        margin-bottom: 30px;
+    }
+    .upcoming-section .owl-nav, 
+    .upcoming-section2 .owl-nav,
+	.upcoming-section .last, 
+    .upcoming-section2 .last, 
+    .upcoming-section3 .last, 
+    .upcoming-section4 .last {
+        margin-top: 30px;
+    }
+	.upcoming-section .owl-nav .owl-prev, 
+	.upcoming-section .owl-nav .owl-next, 
+    .upcoming-section2 .owl-nav .owl-prev,
+    .upcoming-section2 .owl-nav .owl-next{
+        display: inline-block;
+        margin: 0 15px;
+    }
+    .upcoming-section h2, 
+    .upcoming-section2 h2, 
+    .upcoming-section3 h2, 
+    .upcoming-section4 h2, 
+    .banner-sections .banner-text-area .banner-innner h1, 
+    .slider-main .dsc h2, .slider-section2 .dsc h2, 
+    .slider-main .dsc h1, .slider-section2 .dsc h1 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .clicent-logo-section, 
+    .clicent-logo-section2{
+        padding-bottom: 50px;
+    }
+    .clicent-logo-section .single-logo, 
+    .clicent-logo-section2 .single-logo {
+        margin-bottom: 20px;
+    }
+    .match-list tr:last-child,
+    .match-list{
+        padding-bottom: 0;
+    }
+    
+    .match-list tr,
+    .match-list td{
+        display: block;
+    }
+   .match-list tr{
+        padding-bottom: 20px;
+    }
+    .footer-bottom .ft-bottom-right{
+        padding-top: 10px;
+    }
+    .match-list .match-table tr:nth-child(2n) td:first-child{
+        padding-top: 25px;
+    }
+    .match-list .match-table tr:nth-child(2n) td:last-child{
+        padding-bottom: 25px;
+    }
+    .match-list .match-table tr:nth-child(2n) td{
+        border-width: 0;
+    }
+    .footer-bottom .copyright,
+    .footer-bottom .ft-bottom-right{
+        text-align: center;
+    }
+    .our-team-section .col-md-3:last-child .champion-list{
+        margin-bottom: 0;
+    }
+    .video-section-area .video-inner h2,
+    .our-history-sections .history-innner .history-details h3 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .latest-news-nav .slick-slide {
+        width: 33.33% !important;
+    }
+    .latest-news-nav.slick-slider{
+        margin-top: 20px;
+    }
+    .breking-new-area::after {
+        width: 15%;
+    }
+    .slider-section2 .innner-slider .layer-big-image {
+        max-width: 265px;
+    }
+    .slider-section2 .innner-slider .inner-dsc h1 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .breking-new-area .owl-nav {
+        width: 35px;
+    }
+    .header-top-area .header-top-left ul li:last-child {
+        position: relative;
+    }
+    .header-top-area .header-top-left ul li ul {
+        right: 0;
+    }
+    .testimonial-section #testimonial-slider .testimonial .testimonial-profile {
+        float: none;
+        width: 100%;
+        max-width:  120px;
+        margin: 0 auto 20px;
+    }
+    .testimonial-section #testimonial-slider .testimonial .testimonial-content {
+      padding-left: 0;
+      text-align: center;
+    }
+    .testimonial-section #testimonial-slider .testimonial-description{
+        margin-bottom: 0;
+    }
+    .slider-sections-area3 #slider-carousel ul li {
+        width: 150px !important;
+    }
+    .slider-sections-area3 #slider-carousel {
+        bottom: -40px;
+    }
+    .slider-sections-area3 #slider-images ul li .single-slide h1 {
+        font-size: 30px;
+        line-height: 44px;
+        margin-bottom: 25px;
+    }
+    .slider-sections-area3 #slider-images ul li .single-slide h1 .heading1 {
+        margin-bottom: 10px;
+    }
+    .slider-sections-area3 #slider-images ul li .single-slide .button a {
+        margin: 0 10px;
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .testimonil-section-page .slick-current::after {
+        box-shadow: 3px 0 2px #666;
+        right: -38px;
+    }
+    .testimonil-section-page .slick-current::before {
+        left: -25px;
+        box-shadow: -3px 0 2px #666666;
+        border-radius: 3px 0 0 3px;
+    }
+    .single-blog-details .like-section .col-sm-4{
+        margin-bottom: 30px;
+    }
+    .single-blog-details .like-section .col-sm-4:last-child{
+        margin-bottom: 0;
+    }
+    .testimonil-section-page .slick-list.draggable {
+        padding-left: 0 !important;
+    }
+    .single-blog-details blockquote {
+        padding: 16px 25px 20px 63px;
+        font-size: 16px;
+    }
+    .single-blog-details .share-section2 .share-link,
+    .single-blog-details .share-section .share-link1 {
+        float: none;
+        margin-top: 15px;
+    }
+    .shipping-area .product-list table tr td i,
+    .shipping-area .product-list table tr td img{
+        margin: 0 auto;
+    }
+    .shipping-area .product-list table tr td .prize,
+    .shipping-area .product-list table tr td .order-pro,
+    .shipping-area .product-list table tr td .des-pro,
+    .shipping-area .product-list table tr td{
+        padding: 0;
+        text-align: center;
+        margin: 0;
+    }
+    .shipping-area .product-list table tr td .des-pro h4{
+        margin-bottom: 5px;
+    }
+    .shipping-area .product-list table tr {
+        padding: 30px 0;
+    }
+    .shipping-area .product-list table tr td{
+        margin-bottom: 20px;
+    }
+    .shipping-area .product-list table tr td:last-child{
+        margin-bottom: 0;
+    }
+    .single-product-page .single-product-area .single-product-nav {
+        max-width: 286px;
+        margin-left: 18px;
+    }
+    .champion-section-area .club-sidebar{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .squad-list .list-item .list-text {
+        padding: 20px 0 0;
+    }
+    .contact-page-section #googleMap {
+        height: 380px;
+    }
+    .our-team-section .best-player{
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
+    .slider-main.slider-section4 .time_circles > div span {
+        font-size: 18px !important;
+    }
+    .slider-main.slider-section4 .time_circles > div h4{
+        font-size: 7px !important;
+    }
+    .rs-team-single-section .rs-team-single-image .player-info .player-title {
+        font-size: 25px;
+    }
+}
+
+/* Mideo Medium devices max 590px */
+@media only screen and (max-width: 590px) {
+    .rs-blog .col-xs-6,
+    .single-blog-details .col-xs-6{
+        width: 100%;
+        float: non;
+    }
+    .slider-main .btm-date, 
+    .slider-section2 .btm-date {
+        display: none;
+    }
+    .slider-main .btn-slider, 
+    .slider-section2 .btn-slider {
+        margin-top: 20px;
+    }
+    .slider-main.slider-section4 .slider-text .CountDownTimer {
+        margin: 10px auto 5px;
+        max-width: 300px;
+    }
+    .slider-main.slider-section4 .slider-text h1 {
+        font-size: 20px;
+    }
+    .gallery-section-area .grid .grid-item::before, 
+    .gallery-section-area #gallery-items .grid-item::before, 
+    .gallery-section-area .grid .single-gallery::before, 
+    .gallery-section-area #gallery-items .single-gallery::before {
+        bottom: -150px;
+    }
+    .gallery-section-area .grid .grid-item::after, 
+    .gallery-section-area #gallery-items .grid-item::after, 
+    .gallery-section-area .grid .single-gallery::after, 
+    .gallery-section-area #gallery-items .single-gallery::after {
+        top: -150px;
+    }
+    .slider-section2 .innner-slider .btn-slider a {
+        padding: 7px 25px;
+    }
+    .logo img{
+        max-height: 120px;
+    }
+    .breking-new-area .breking-new {
+        font-size: 14px;
+    }
+    .breking-new-area .news-dsc {
+        padding-left: 10px;
+        font-size: 12px;
+    }
+    .slider-sections-area3 #slider-carousel ul li {
+        width: 120px !important;
+    }
+    .title-bg {
+        font-size: 20px;
+        margin-bottom: 35px;
+    }
+
+    .champion-section-area .champion-inner{
+        display: block;
+    }
+    .champion-section-area .champion-inner .col-sm-2{
+        display: block;
+        width: 100%;
+    }
+    .champion-section-area .champion-inner .col-sm-10 {
+        display: block;
+        background: #fff;
+        width: 100%;
+    }
+    .champion-section-area .point-menu{
+        text-align: center;
+    }
+    .champion-section-area .point-menu li {
+        padding: 0 4px;
+        line-height: 50px;
+    }
+    .testimonil-section-page .slick-current:after ,
+    .testimonil-section-page .slick-current:before {
+        display: none;
+    }
+    .testimonil-section-page .slick-current{
+        border-radius: 5px;
+    }
+    .rs-history-area .history-innner .tabs-menu li a {
+        font-size: 20px;
+        padding: 15px 10px;
+        width: 110px;
+    }
+    .testimonil-section-page .slick-current .author-info p {
+        padding: 0 10px;
+        color: #111111;
+    }
+    .single-blog-details blockquote {
+        font-size: 14px;
+    }
+    .checkout-price, .coupon-fields .apply-coupon {
+        float: none;
+    }
+    .rs-point-table .tab-content table .team-name {
+        width: 200px;
+    }
+    .rs-point-table .point-menu li {
+        padding: 0 25px 15px 0;
+    }
+    .single-product-page .single-price-info {
+        margin-bottom: 20px;
+    }
+    .single-product-page .product-description ul.nav-menus {
+        margin: 30px 0 15px;
+        padding-bottom: 18px;
+    }
+    .rs-breadcrumbs .page-title {
+        font-size: 26px;
+    }
+    .world-cup-page .list-three table tr td:last-child {
+        width: 165px;
+    }
+    .champion-section-area .champion-inner::before, 
+    .champion-section-area .champion-inner::after {
+        width: 93.5%;
+    }
+    .videos-icon {
+        width: 84px;
+        height: 84px;
+    }
+    .videos-icon a {
+        font-size: 35px;
+        line-height: 70px;
+        height: 70px;
+        width: 70px;
+    }
+}
+
+/* Mobile devices min 480px */
+@media only screen and (min-width: 480px) {
+    .world-cup-page .match-summary.list-two table tr td,
+    .world-cup-page .match-summary.list-one table tr td{
+        width: 25%;
+    }
+}
+
+/* Small Medium devices */
+@media only screen and (max-width: 480px) {
+    .team-inner-page .col-xs-6,
+    .single-product-page .our-products-section .col-xs-6,
+    .our-products-page .col-xs-6,
+    .clicent-logo-section .col-xs-6,
+    .gallery-section-page2 .col-xs-6{
+        width: 100%;
+        float: none;
+    }
+    .rs-blog .single-blog-slide {
+        min-height: auto;
+    }
+    .slider-section2 .item::before,
+    .slider-section2 .innner-slider .layer-big-image,
+    .hidden-420{
+        display: none;
+    }
+    .clicent-logo-section .single-logo{
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    .slider-section2 .col-sm-offset-6{
+        width: 100%;
+    }
+    .slider-section2 .col-sm-offset-6{
+        margin-left: 0;
+    }
+    .slider-main.slider-section4 .slider-text h1 {
+        font-size: 16px;
+    }
+    .slider-section4 .btn-slider {
+        margin-top: 10px;
+    }
+    .rs-breadcrumbs img {
+        min-height: 150px;
+    }
+    .gallery-section2 .col-xs-6,
+    .slider-main .col-xs-8{
+        width: 100%;
+    }
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .slider-images ul.slides li img,
+    .full-section-banner .banner-sections img,
+    .slider-main .owl-carousel .owl-item img, 
+    .slider-section2 .item img{
+        min-height: 200px;
+    }
+    .header-top-area .header-top-left ul li:last-child {
+        margin-left: 10px;
+    }
+    .header-top-area .social-media-area .log {
+        margin-left: 0;
+    }
+    .header-top-area .social-media-area ul li a {
+        margin-right: 6px;
+    }
+    .header-top-area .social-media-area ul li a ,
+    .header-top-area .social-media-area .log a, 
+    .header-top-area .social-media-area .sign a {
+        font-size: 13px;
+    }
+    .slider-main .dsc .btn-slider a, 
+    .slider-section2 .dsc .btn-slider a, 
+    .slider-main .dsc .btn-slider .btn1, 
+    .slider-section2 .dsc .btn-slider .btn1 {
+        padding: 5px 12px;
+        margin: 0 5px;
+        font-size: 12px;
+    }
+    .slider-main .dsc h2, .slider-section2 .dsc h2, 
+    .slider-main .dsc h1, .slider-section2 .dsc h1 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .today-match-teams .today-score .today-match-team, 
+    .today-match-teams .today-score .today-final-score, 
+    .today-match-teams .today-score .today-match-team {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .today-match-teams .today-score .today-final-score{
+        margin: 30px auto;
+    }
+    .today-match-teams .today-score .today-final-score h4{
+        margin: 10px;
+    }
+    .point-list table.point-table th, 
+    .point-list table.point-table td,
+    .today-match-teams .today-results-table tr td {
+        padding: 7px 12px;
+        font-size: 13px;
+    }
+    .latest-news .small-news .news-img, 
+    .latest-news2 .small-news .news-img {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .latest-news .small-news + .small-news, 
+    .latest-news2 .small-news + .small-news{
+        margin-top: 30px;
+    }
+    .our-history-sections .history-innner .about-history .single-about span{
+        font-size: 18px;
+    }
+    .video-section-area .video-inner h2{
+        font-size: 15px;
+    }
+    .slider-main .slider-text {
+        margin-top: 5px;
+        line-height: 20px;
+    }
+    .slider-section2 .innner-slider .inner-dsc {
+        margin-bottom: 10%;
+        text-align: center;
+    }
+    .slider-section2 .innner-slider .inner-dsc h1 {
+        color: #fff;
+        font-size: 18px;
+    }
+    .banner-sections .banner-text-area .banner-innner h1{
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 25px;
+    }
+    .round-btn{
+        padding: 8px 36px 5px 36px;
+    }
+    .slider-sections-area3 #slider-carousel ul li {
+        width: 85px !important;
+    }
+    .slider-sections-area3 #slider-images ul li .single-slide h1 {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    .slider-sections-area3 #slider-images ul li .single-slide .button a {
+        margin: 0 5px;
+        width: 115px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .slider-sections-area3 #slider-images ul li .single-slide h1 {
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+    .upcoming-section4.upcoming-section4 {
+        padding-top: 90px;
+    }
+    .slider-sections-area3 #slider-carousel {
+        bottom: -30px;
+    }
+    .rs-history-area .history-innner .tabs-menu li a {
+        font-size: 14px;
+        width: 75px;
+        margin: 0 5px;
+    }
+    .rs-history-area .history-innner .tabs-menu li a i {
+        margin-bottom: 6px;
+    }
+    .rs-history-area .history-innner .position {
+        float: none;
+        width: auto;
+        margin-bottom: 25px;
+    }
+    .rs-history-area .history-innner .president-info .signature {
+        float: none;
+        text-align: center;
+    }
+    .single-blog-details .author-comment ul li:nth-child(2) {
+        margin-left: 0;
+    }
+    .rs-point-table .point-menu li{
+        padding-right: 20px;
+    }
+    .rs-point-table .tab-content table tr td:first-child {
+        padding-left: 0;
+        width: auto;
+    }
+    .rs-point-table .tab-content table tr td {
+        width: auto; 
+        border: 1px solid #e1e1e1;
+        font-size: 12px;
+        padding: 3px;
+    }
+    .rs-point-table .tab-content table tr{
+        margin-bottom: 25px;
+    }
+    .rs-point-table .tab-content table tr:first-child,
+    .rs-point-table .tab-content table tr:last-child{
+        margin-bottom: 0;
+    }
+    .rs-point-table .tab-content table{
+        border-left: 0;
+        border-right: 0;
+    }
+    .rs-point-table .tab-content table tr{
+        border-top: 1px solid #e1e1e1;
+        border-left: 1px solid #e1e1e1;
+        border-right: 1px solid #e1e1e1;
+    }
+    .world-cup-page .match-summary table tr td {
+        font-size: 11px;
+    }
+    .world-cup-page .list-three table tr td:last-child {
+        width: 100px;
+    }
+    .gallery-section-page2 .single-gallery:after{
+        top: 0.5px;
+    }
+    .club-sidebar .club-details h2.title-bg {
+        font-size: 18px;
+    }
+    .champion-section-area .rs-count .rs-counter-list h3,
+    .club-sidebar .club-details ul li strong {
+        font-size: 16px;
+    }
+    .club-sidebar .club-details ul li span {
+        font-size: 14px;
+    }
+    .squad-list .list-item .image {
+        width: 15%;
+    }
+    .squad-list .list-item .list-text {
+        width: 85%;
+    }
+    .squad-list .list-item .list-text .designation {
+        width: 40%;
+    }
+    .squad-list .list-item .list-text .name {
+        width: 50%;
+    }
+    .squad-list .list-item .list-text .name h4 {
+        font-size: 14px;
+    }
+    .club-sidebar .club-details ul li {
+        width: 100%;
+        float: none;
+    }
+    .champion-section-area .point-menu li{
+       padding-right: 14px;
+    }
+    .champion-section-area .champion-inner .champion-details {
+        padding: 15px;
+    }
+    .champion-section-area .champion-inner .champion-logo {
+        padding: 10px 0 0;
+    }
+    .champion-section-area .champion-inner .champion-details .year-details h3 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .champion-section-area .champion-inner .champion-details .champion-year {
+        font-size: 25px;
+    }
+    .champion-section-area .champion-inner::before, 
+    .champion-section-area .champion-inner::after {
+        width: 90.5%;
+    }
+    .default-pagination ul{
+        padding: 20px 0;
+    }
+    .default-pagination ul li{
+        display: block;
+        padding: 0;
+    }
+    .default-pagination ul li a,
+    .default-pagination ul li:first-child a, 
+    .default-pagination ul li:last-child a {
+        margin: 0 auto;
+    }
+    .contact-page-section #googleMap {
+        height: 300px;
+    }
+    .slider-main .dsc .btn-slider .btn2{
+        padding: 5px 30px;
+    }
+    .rs-point-table .point-menu li{
+        padding-right: 18px;
+    }
+    .champion-section-area .point-menu li a,
+    .rs-point-table .point-menu li a,
+    .header-top-area .header-top-left ul li a,
+    .footer-bottom .copyright p{
+        font-size: 13px;
+    }
+}
