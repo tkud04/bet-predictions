@@ -1,0 +1,9 @@
+.banner-h3{
+    letter-spacing: 1px;
+    text-transform: capitalize !important;
+    margin-bottom: 4px;
+    line-height: 70px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff !important;
+}

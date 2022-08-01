@@ -2000,7 +2000,7 @@ body .modal-backdrop {
 5. Upcoming Section Start Here 
 ---------------------------------------*/
 .upcoming-section {
-  background: url(images/upcoming/1.jpg) no-repeat center top;
+  background: url(../images/upcoming/1.jpg) no-repeat center top;
   background-size: cover;
 }
 .upcoming-section .owl-nav i:hover {
@@ -2623,7 +2623,7 @@ body .modal-backdrop {
 07.Last Match Results
 ---------------------------------------*/
 .today-match-teams {
-  background: url(images/today-match/bg.jpg);
+  background: url(../images/today-match/bg.jpg);
   background-size: cover;
   position: relative;
 }

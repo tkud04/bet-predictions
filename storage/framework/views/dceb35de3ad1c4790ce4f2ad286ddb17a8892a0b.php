@@ -9,7 +9,7 @@ $email = 'support@betpredictions.com';
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>@yield('title') | Home</title>
+		<title><?php echo $__env->yieldContent('title'); ?> | Home</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -60,7 +60,7 @@ $email = 'support@betpredictions.com';
 						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 							<div class="header-top-left">                            
 								<ul>
-									<li><a href="mailto:{{$email}}"><i class="fa fa-envelope-o" aria-hidden="true"></i> {{$email}}</a></li>
+									<li><a href="mailto:<?php echo e($email); ?>"><i class="fa fa-envelope-o" aria-hidden="true"></i> <?php echo e($email); ?></a></li>
 									<li><img src="images/logo/flag.jpg" alt="Logo">
                                         <a href="#">English 
                                             <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -80,12 +80,12 @@ $email = 'support@betpredictions.com';
 										<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 										<li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <sup>1</sup></a></li>
                     -->
-                    @if($user == null)
-                    <li class="log"><a href="{{url('login')}}"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li> 
-										<li class="sign"><a href="{{url('signup')}}"><span>/</span> Sign Up</a></li>
-                    @else
-                    <li class=""><a href="{{url('dashboard')}}"><i class="fa fa-dashboard" aria-hidden="true"></i> Dashboard</a></li>             
-                    @endif
+                    <?php if($user == null): ?>
+                    <li class="log"><a href="<?php echo e(url('login')); ?>"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li> 
+										<li class="sign"><a href="<?php echo e(url('signup')); ?>"><span>/</span> Sign Up</a></li>
+                    <?php else: ?>
+                    <li class=""><a href="<?php echo e(url('dashboard')); ?>"><i class="fa fa-dashboard" aria-hidden="true"></i> Dashboard</a></li>             
+                    <?php endif; ?>
 									</ul>
 								</nav>
 							</div>
@@ -97,7 +97,7 @@ $email = 'support@betpredictions.com';
                 <div class="container">
                     <div class="row">
                         <div class="col-md-2 col-sm-12 col-xs-12 logo">
-                            <a href="{{url('/')}}"><img src="images/logo.png" alt="logo"></a>
+                            <a href="<?php echo e(url('/')); ?>"><img src="images/logo.png" alt="logo"></a>
                         </div>
                         <div class="col-md-10 col-sm-12 col-xs-12 mobile-menu">
                             <div class="main-menu">
@@ -106,28 +106,28 @@ $email = 'support@betpredictions.com';
                                     <ul class="nav-menu">
                                         <!-- Home -->
                                         <li class="current-menu-item current_page_item">
-                                            <a href="{{url('/')}}">Home</a>
+                                            <a href="<?php echo e(url('/')); ?>">Home</a>
                                         </li>
                                         <!-- End Home -->
 
-                                        <li><a href="{{url('about')}}">About</a></li>
-                                        <li><a href="{{url('subscribe')}}">Subscribe</a></li>
-                                        <li><a href="{{url('blog')}}">Blog</a></li>
+                                        <li><a href="<?php echo e(url('about')); ?>">About</a></li>
+                                        <li><a href="<?php echo e(url('subscribe')); ?>">Subscribe</a></li>
+                                        <li><a href="<?php echo e(url('blog')); ?>">Blog</a></li>
                                         
-                                        @if($user == null)
-                                        <li class=""><a href="{{url('login')}}">Login</a></li>
-                                        @else
+                                        <?php if($user == null): ?>
+                                        <li class=""><a href="<?php echo e(url('login')); ?>">Login</a></li>
+                                        <?php else: ?>
                                         <!-- Drop Down -->
                                         <li class="menu-item-has-children">
-                                            <a href="#">Hi {{$user->fname}},</a>
+                                            <a href="#">Hi <?php echo e($user->fname); ?>,</a>
                                             <ul class="sub-menu">
-                                               <li><a href="{{url('dashboard')}}">Dashboard</a></li> 
-                                               <li><a href="{{url('bye')}}">Logout</a></li> 
+                                               <li><a href="<?php echo e(url('dashboard')); ?>">Dashboard</a></li> 
+                                               <li><a href="<?php echo e(url('bye')); ?>">Logout</a></li> 
                                             </ul>
                                         </li>
                                          <!-- Drop Down -->
-                                        @endif
-                                        <li><a href="{{url('contact')}}">Contact</a></li>
+                                        <?php endif; ?>
+                                        <li><a href="<?php echo e(url('contact')); ?>">Contact</a></li>
                                     </ul>
                                </nav>
                               <!--Header Search Start  here-->
@@ -160,24 +160,25 @@ $email = 'support@betpredictions.com';
               
              ?> 
 
-                 @if($pop != "" && $val != "")
-                   @include('session-status',['pop' => $pop, 'val' => $val])
-                 @endif
+                 <?php if($pop != "" && $val != ""): ?>
+                   <?php echo $__env->make('session-status',['pop' => $pop, 'val' => $val], \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                 <?php endif; ?>
 
-@if($user == null)
+<?php if($user == null): ?>
 <!--------- Plugins: DO NOT EDIT ------>
 <?php
 foreach($plugins as $p)
 {
 ?>
-{!! $p['value'] !!}
+<?php echo $p['value']; ?>
+
 <?php
 }
 ?>
 <!------------------------------------->
-@endif
+<?php endif; ?>
 
-@yield('content')
+<?php echo $__env->yieldContent('content'); ?>
 
 
 		<!-- Client Logo Section Start Here-->
@@ -185,13 +186,13 @@ foreach($plugins as $p)
             <div class="overly-bg"></div>
             <div class="container">
                 <div id="upcoming" class="rs-carousel owl-carousel" data-loop="true" data-items="4" data-margin="20" data-autoplay="true" data-autoplay-timeout="5000" data-smart-speed="2000" data-dots="false" data-nav="false" data-nav-speed="false" data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="2" data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="4" data-md-device-nav="false" data-md-device-dots="false">
-                   @for($i = 0; $i < 5; $i++)
+                   <?php for($i = 0; $i < 5; $i++): ?>
                    <div class="item">
                         <div class="single-logo">
                             <a href="#"><img src="images/brand.png" alt=""></a>
                         </div>
                     </div>
-                    @endfor
+                    <?php endfor; ?>
                 </div>
             </div>
         </div>
@@ -237,12 +238,12 @@ foreach($plugins as $p)
                         <div class="col-md-3">
                             <h4 class="footer-title">Useful Links</h4>
                             <ul class="sitemap-widget">
-                                <li class="active"><a href="{{url('/')}}">Home</a></li>
-                                <li><a href="{{url('about')}}">About</a></li>
-                                <li><a href="{{url('blog')}}">Blog</a></li> 
-                                <li><a href="{{url('contact')}}">Contact</a></li>
-                                <li><a href="{{url('terms')}}">Terms &amp; Conditions</a></li>
-                                <li><a href="{{url('privacy')}}">Privacy Policy</a></li>
+                                <li class="active"><a href="<?php echo e(url('/')); ?>">Home</a></li>
+                                <li><a href="<?php echo e(url('about')); ?>">About</a></li>
+                                <li><a href="<?php echo e(url('blog')); ?>">Blog</a></li> 
+                                <li><a href="<?php echo e(url('contact')); ?>">Contact</a></li>
+                                <li><a href="<?php echo e(url('terms')); ?>">Terms &amp; Conditions</a></li>
+                                <li><a href="<?php echo e(url('privacy')); ?>">Privacy Policy</a></li>
                             </ul>
                         </div>
                         <div class="col-md-3">
@@ -261,7 +262,7 @@ foreach($plugins as $p)
                     <div class="row">
                         <div class="col-md-4 col-sm-6">
                             <div class="copyright">
-                                <p>&copy; {{date('Y')}}, All Rights Reserved.</p>
+                                <p>&copy; <?php echo e(date('Y')); ?>, All Rights Reserved.</p>
                             </div>
                         </div>
                         <div class="col-md-8 col-sm-6">
@@ -332,6 +333,6 @@ foreach($plugins as $p)
 		<!-- main js -->
 		<script src="js/main.js"></script>
 
-    @yield('scripts')
+    <?php echo $__env->yieldContent('scripts'); ?>
 	</body>
-</html>
+</html><?php /**PATH C:\repos\bet-predictions\resources\views/layout.blade.php ENDPATH**/ ?>

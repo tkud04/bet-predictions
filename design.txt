@@ -1,0 +1,40 @@
+GENERAL
+home
+about
+blog (posts will be free predictions and analysis)
+privacy policy
+terms
+contact us
+subscribe
+signup/login
+forgot password
+
+USER
+dashboard
+profile
+tips
+tips history
+change password
+
+ADMIN
+dashboard
+view users
+edit user
+enable/disable user
+view tips
+add new tip
+edit tip (mark as won/lost)
+view posts
+add new post
+edit post
+remove post
+site settings:
+ banners
+ edit terms,
+ edit privacy policy
+ edit email addresses
+ edit phone numbers
+
+
+ ABOUT US
+ We provide free and premium (subscription) tips with a maximum of 5.0 odds that are GUARANTEED to cash out. 
