@@ -21,6 +21,8 @@ $email = 'support@betpredictions.com';
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<!-- animate css -->
 		<link rel="stylesheet" href="css/animate.css">
+        <!-- sweetalert css -->
+		<link rel="stylesheet" href="lib/sweet-alert/sweetlaert2.css">
 		<!-- Main Menu css -->
 		<link rel="stylesheet" href="css/rsmenu-main.css">
 		<!-- rsmenu transitions css -->
@@ -315,6 +317,8 @@ foreach($plugins as $p)
 		<script src="js/jquery-ui.min.js"></script>
 		<!-- bootstrap js -->
 		<script src="js/bootstrap.min.js"></script>
+        <!-- sweetalert js -->
+		<script src="lib/sweet-alert/sweetalert2.js"></script>
 		<!-- meanmenu js -->
 		<script src="js/jquery.meanmenu.js"></script>
 		<!-- wow js -->

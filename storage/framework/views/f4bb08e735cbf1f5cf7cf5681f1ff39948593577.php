@@ -2,12 +2,12 @@
 $img = 'images/breadcrumbs/about.jpg'; 
 $bodyClass = 'home-two';
 ?>
-@extends('layout')
 
-@section('title',"About Us")
 
-@section('content')
- @include('banner-2',['img' => $img,'title' => 'About Us'])
+<?php $__env->startSection('title',"About Us"); ?>
+
+<?php $__env->startSection('content'); ?>
+ <?php echo $__env->make('banner-2',['img' => $img,'title' => 'About Us'], \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
  <!-- Club Section Start -->
  <div class="rs-club sec-spacer">
@@ -38,15 +38,15 @@ $bodyClass = 'home-two';
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="tesitmonial-inner">
-							@foreach($testimonials as $t)
+							<?php $__currentLoopData = $testimonials; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $t): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                             <div class="single-testimonil text-center">
                                 <div class="author-info">
-                                    <img src="images/avatar.jpg" width='101' height='101' alt="{{$t['name']}}" />
-                                    <h4>{{$t['name']}} <span>{{$t['location']}}</span></h4>
-                                    <p>{!! $t['comment'] !!}</p>
+                                    <img src="images/avatar.jpg" width='101' height='101' alt="<?php echo e($t['name']); ?>" />
+                                    <h4><?php echo e($t['name']); ?> <span><?php echo e($t['location']); ?></span></h4>
+                                    <p><?php echo $t['comment']; ?></p>
                                 </div>
                             </div>
-							@endforeach
+							<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                         </div>
                     </div>
                 </div>
@@ -54,4 +54,6 @@ $bodyClass = 'home-two';
         </div>
         <!--Testimonils Section End Here-->
 
-@stop
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\repos\bet-predictions\resources\views/about.blade.php ENDPATH**/ ?>

@@ -131,8 +131,128 @@ class MainController extends Controller {
 		return view('index',compact(['user','signals','plugins','banners','matches','posts','tips','testimonials']));
     }
 	
+	public function getAbout()
+    {
+       $user = null;
 
-	
+		if(Auth::check())
+		{
+			$user = Auth::user();
+		}
+
+		
+		$signals = $this->helpers->signals;
+        $plugins = $this->helpers->getPlugins();
+
+		$testimonials = [
+			[
+				'name' => 'Tobi',
+				'location' => 'Lagos',
+				'rating' => 4,
+				'comment' => 'Testing the comments for testimonials'
+			],
+			[
+				'name' => 'Chisom',
+				'location' => 'Abuja',
+				'rating' => 3,
+				'comment' => 'Testing the comments for testimonials'
+			],
+			[
+				'name' => 'Martins',
+				'location' => 'Abia',
+				'rating' => 4,
+				'comment' => 'Testing the comments for testimonials'
+			],
+		];
+
+		return view('about',compact(['user','signals','plugins','testimonials']));
+
+	}
+
+	/**
+	 * Show the application welcome screen to the user.
+	 *
+	 * @return Response
+	 */
+	public function getPosts()
+    {
+       $user = null;
+
+		if(Auth::check())
+		{
+			$user = Auth::user();
+		}
+
+		
+		$signals = $this->helpers->signals;
+        $plugins = $this->helpers->getPlugins();
+
+		$posts = [
+			[
+				'img' => 'images/latest/1.jpg',
+				'tag' => 'tfc-club',
+				'date'  => '1 Aug 2022',
+				'url' => 'blog',
+				'title' => 'TFC Club Score Seven in CL Rout Match',
+				'summary' => 'Blandit rutrum, erat et egestas ultricies, dolor tortor egestas enim, quiste rhoncus sem the purus eu sapien curabitur.Lorem Ipsum is therefore always free from repetitionetc.',
+			],
+			[
+				'img' => 'images/latest/2.jpg',
+				'tag' => 'tfc-club',
+				'date'  => '2 Aug 2022',
+				'url' => 'blog',
+				'title' => 'TFC Club Score Seven in CL Rout Match',
+				'summary' => 'Blandit rutrum, erat et egestas ultricies, dolor tortor egestas enim, quiste rhoncus sem the purus eu sapien curabitur.Lorem Ipsum is therefore always free from repetitionetc.',
+			],
+			[
+				'img' => 'images/latest/3.jpg',
+				'tag' => 'tfc-club',
+				'date'  => '3 Aug 2022',
+				'url' => 'blog',
+				'title' => 'TFC Club Score Seven in CL Rout Match',
+				'summary' => 'Blandit rutrum, erat et egestas ultricies, dolor tortor egestas enim, quiste rhoncus sem the purus eu sapien curabitur.Lorem Ipsum is therefore always free from repetitionetc.',
+			],
+		];
+		
+
+		return view('posts',compact(['user','signals','plugins','posts']));
+    }
+
+	/**
+	 * Show the application welcome screen to the user.
+	 *
+	 * @return Response
+	 */
+	public function getPost(Request $request)
+    {
+       $user = null;
+
+		if(Auth::check())
+		{
+			$user = Auth::user();
+		}
+
+		
+		$signals = $this->helpers->signals;
+        $plugins = $this->helpers->getPlugins();
+
+		$req = $request->all();
+
+		if(!isset($req['tag']))
+		{
+			return redirect()->intended('blog');
+		}
+
+		$post = [
+			   'img' => 'images/latest/1.jpg',
+				'url' => 'blog',
+				'title' => 'TFC Club Score Seven in CL Rout Match',
+				'summary' => 'Blandit rutrum, erat et egestas ultricies, dolor tortor egestas enim, quiste rhoncus sem the purus eu sapien curabitur.Lorem Ipsum is therefore always free from repetitionetc.',
+		];
+		
+
+		return view('post',compact(['user','signals','plugins','post']));
+    }
 
    
 

@@ -19,7 +19,9 @@ use App\Http\Controllers\AdminController;
 Route::get('/', [MainController::class,'getIndex']);
 Route::get('contact', [MainController::class,'getContact']);
 Route::get('about', [MainController::class,'getAbout']);
-Route::get('why-us', [MainController::class,'getWhyUs']);
+
+Route::get('blog', [MainController::class,'getPosts']);
+Route::get('post', [MainController::class,'getPost']);
 
 
 //Authentication
