@@ -1,0 +1,8 @@
+user (email, password, verified, status,...)
+posts (tag,title,content,img,author,status)
+tips (odds,content,author,rating,status)
+booking_codes (tip_id,site,code)
+results (tip_id, status)
+settings (name,value)
+banners (url,first,status)
+
